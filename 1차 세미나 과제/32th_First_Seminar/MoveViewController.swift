@@ -16,7 +16,7 @@ class MoveViewController: UIViewController {
         return toggleText
     }()
     
-    private var toggleSwitch: UISwitch = {
+    lazy var toggleSwitch: UISwitch = {
        let toSwitch = UISwitch()
         toSwitch.addTarget(self, action: #selector(toggleSwitchChanged(_:)), for: .valueChanged)
         return toSwitch

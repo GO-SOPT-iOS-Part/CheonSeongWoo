@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2503086D29EAB35A000DE430 /* FirstViewController_Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503086C29EAB35A000DE430 /* FirstViewController_Lab.swift */; };
+		2503086F29EAB66B000DE430 /* SecondViewController_Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503086E29EAB66B000DE430 /* SecondViewController_Lab.swift */; };
 		2561B82029DEBF4C00DF1765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B81F29DEBF4C00DF1765 /* AppDelegate.swift */; };
 		2561B82229DEBF4C00DF1765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B82129DEBF4C00DF1765 /* SceneDelegate.swift */; };
 		2561B82429DEBF4C00DF1765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B82329DEBF4C00DF1765 /* ViewController.swift */; };
@@ -18,6 +20,12 @@
 		2561B85029DEBFE100DF1765 /* SWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B84F29DEBFE100DF1765 /* SWViewController.swift */; };
 		2561B85229DEBFF500DF1765 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B85129DEBFF500DF1765 /* SecondViewController.swift */; };
 		2561B85429DEC08200DF1765 /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B85329DEC08200DF1765 /* MoveViewController.swift */; };
+		25FA834129E134260091675E /* FirstViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA834029E134260091675E /* FirstViewController_DelegatePattern.swift */; };
+		25FA834329E134530091675E /* SecondViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA834229E134530091675E /* SecondViewController_DelegatePattern.swift */; };
+		25FA834A29E13EB80091675E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FA834929E13EB80091675E /* SnapKit */; };
+		25FA834D29E13EF90091675E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 25FA834C29E13EF90091675E /* Then */; };
+		25FA835029E143940091675E /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 25FA834F29E143940091675E /* Inject */; };
+		25FA835329E146890091675E /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FA835229E146890091675E /* AutoLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2503086C29EAB35A000DE430 /* FirstViewController_Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController_Lab.swift; sourceTree = "<group>"; };
+		2503086E29EAB66B000DE430 /* SecondViewController_Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController_Lab.swift; sourceTree = "<group>"; };
 		2561B81C29DEBF4C00DF1765 /* 32th_First_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 32th_First_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2561B81F29DEBF4C00DF1765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2561B82129DEBF4C00DF1765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,9 @@
 		2561B84F29DEBFE100DF1765 /* SWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
 		2561B85129DEBFF500DF1765 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2561B85329DEC08200DF1765 /* MoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
+		25FA834029E134260091675E /* FirstViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		25FA834229E134530091675E /* SecondViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		25FA835229E146890091675E /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FA834A29E13EB80091675E /* SnapKit in Frameworks */,
+				25FA834D29E13EF90091675E /* Then in Frameworks */,
+				25FA835029E143940091675E /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +125,7 @@
 				2561B85129DEBFF500DF1765 /* SecondViewController.swift */,
 				2561B84F29DEBFE100DF1765 /* SWViewController.swift */,
 				2561B85329DEC08200DF1765 /* MoveViewController.swift */,
+				25FA833F29E133ED0091675E /* 2nd_Seminar */,
 				2561B82829DEBF4D00DF1765 /* Assets.xcassets */,
 				2561B82A29DEBF4D00DF1765 /* LaunchScreen.storyboard */,
 				2561B82D29DEBF4D00DF1765 /* Info.plist */,
@@ -133,6 +150,26 @@
 			path = 32th_First_SeminarUITests;
 			sourceTree = "<group>";
 		};
+		25FA833F29E133ED0091675E /* 2nd_Seminar */ = {
+			isa = PBXGroup;
+			children = (
+				25FA834029E134260091675E /* FirstViewController_DelegatePattern.swift */,
+				25FA834229E134530091675E /* SecondViewController_DelegatePattern.swift */,
+				25FA835129E1465D0091675E /* Seminar_Lab */,
+			);
+			path = 2nd_Seminar;
+			sourceTree = "<group>";
+		};
+		25FA835129E1465D0091675E /* Seminar_Lab */ = {
+			isa = PBXGroup;
+			children = (
+				25FA835229E146890091675E /* AutoLayoutViewController.swift */,
+				2503086C29EAB35A000DE430 /* FirstViewController_Lab.swift */,
+				2503086E29EAB66B000DE430 /* SecondViewController_Lab.swift */,
+			);
+			path = Seminar_Lab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +186,11 @@
 			dependencies = (
 			);
 			name = 32th_First_Seminar;
+			packageProductDependencies = (
+				25FA834929E13EB80091675E /* SnapKit */,
+				25FA834C29E13EF90091675E /* Then */,
+				25FA834F29E143940091675E /* Inject */,
+			);
 			productName = 32th_First_Seminar;
 			productReference = 2561B81C29DEBF4C00DF1765 /* 32th_First_Seminar.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +263,11 @@
 				Base,
 			);
 			mainGroup = 2561B81329DEBF4C00DF1765;
+			packageReferences = (
+				25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				25FA834B29E13EF90091675E /* XCRemoteSwiftPackageReference "Then" */,
+				25FA834E29E143940091675E /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = 2561B81D29DEBF4C00DF1765 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,11 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FA834329E134530091675E /* SecondViewController_DelegatePattern.swift in Sources */,
 				2561B82429DEBF4C00DF1765 /* ViewController.swift in Sources */,
+				25FA835329E146890091675E /* AutoLayoutViewController.swift in Sources */,
+				2503086F29EAB66B000DE430 /* SecondViewController_Lab.swift in Sources */,
+				2503086D29EAB35A000DE430 /* FirstViewController_Lab.swift in Sources */,
 				2561B82029DEBF4C00DF1765 /* AppDelegate.swift in Sources */,
 				2561B85029DEBFE100DF1765 /* SWViewController.swift in Sources */,
 				2561B85229DEBFF500DF1765 /* SecondViewController.swift in Sources */,
 				2561B82229DEBF4C00DF1765 /* SceneDelegate.swift in Sources */,
+				25FA834129E134260091675E /* FirstViewController_DelegatePattern.swift in Sources */,
 				2561B85429DEC08200DF1765 /* MoveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Xlinker-interposable";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sopt-Cheon.-2th-First-Seminar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -476,6 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Xlinker-interposable";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sopt-Cheon.-2th-First-Seminar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,6 +654,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		25FA834B29E13EF90091675E /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		25FA834E29E143940091675E /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25FA834929E13EB80091675E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		25FA834C29E13EF90091675E /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FA834B29E13EF90091675E /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		25FA834F29E143940091675E /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FA834E29E143940091675E /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2561B81429DEBF4C00DF1765 /* Project object */;
 }

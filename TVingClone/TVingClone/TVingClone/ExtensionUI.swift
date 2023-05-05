@@ -1,6 +1,15 @@
 import UIKit
 import Then
 
+extension UIImage {
+    func resize(to newSize: CGSize) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        draw(in: CGRect(origin: CGPoint.zero, size: newSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+}
 
 extension UIButton {
     func setUnderlineTitle(_ title: String?, for state: UIControl.State) {
@@ -51,6 +60,13 @@ class CustomTextField: UITextField {
     @objc func secureToggle(){
         isVisable = !isVisable
         self.isSecureTextEntry = isVisable
+        
+        // 버튼 이미지 변경
+          if !isVisable {
+              secureButton.setImage(UIImage(named: "SecureOn"), for: .normal)
+          } else {
+              secureButton.setImage(UIImage(named: "SecureOff"), for: .normal)
+          }
     }
     
     
@@ -70,11 +86,11 @@ class CustomTextField: UITextField {
         self.addTarget(self, action: #selector(textFieldTouched), for: .editingDidBegin)
         self.addTarget(self, action: #selector(textFieldDidEndEditing), for: .editingDidEnd)
         self.layer.borderWidth = 1.0
-        self.layer.borderColor = UIColor.tvingGray1.cgColor
+        self.layer.borderColor = UIColor.tvingGray5.cgColor
     }
     
     @objc private func textFieldTouched() {
-        self.layer.borderColor = UIColor.tvingGray4.cgColor
+        self.layer.borderColor = UIColor.tvingGray1.cgColor
     }
     
     @objc private func textFieldDidEndEditing() {
@@ -84,19 +100,24 @@ class CustomTextField: UITextField {
     
     func uiSet(_ text: String){
         self.placeholder = text
-        self.backgroundColor = .tvingGray1
-        self.setPlaceholder(color: .tvingGray4)
+        self.backgroundColor = .tvingGray4
+        self.setPlaceholder(color: .tvingGray2)
         self.isEnabled = true
         self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 0))
         self.leftViewMode = .always
         self.autocapitalizationType = .none
-        self.textColor = .tvingGray4
+        self.textColor = .tvingGray2
         self.rightView = buttonStack
         self.rightViewMode = .whileEditing
     }
+    
 }
 extension CustomTextField {
     func setSecureButtonHidden(_ isHidden: Bool) {
         secureButton.isHidden = isHidden
     }
 }
+
+
+// enum 분기 처리, id 형식인지 password 확인할 수 있어서 그에 따른 view를 그릴 수 있다.
+

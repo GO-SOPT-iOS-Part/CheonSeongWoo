@@ -13,20 +13,23 @@ extension UIColor {
         return UIColor(r: 255, g: 20, b: 60)
     }
 
-    class var tvingGray4: UIColor {
+    class var tvingGray1: UIColor {
         return UIColor(r: 214, g: 214, b: 214)
     }
 
-    class var tvingGray3: UIColor {
+    class var tvingGray2: UIColor {
         return UIColor(r: 156, g: 156, b: 156)
     }
 
-    class var tvingGray2: UIColor {
+    class var tvingGray3: UIColor {
         return UIColor(r: 98, g: 98, b: 98)
     }
 
-    class var tvingGray1: UIColor {
+    class var tvingGray4: UIColor {
         return UIColor(r: 46, g: 46, b: 46)
+    }
+    class var tvingGray5: UIColor {
+        return UIColor(r: 25, g: 25, b: 25)
     }
 }
 

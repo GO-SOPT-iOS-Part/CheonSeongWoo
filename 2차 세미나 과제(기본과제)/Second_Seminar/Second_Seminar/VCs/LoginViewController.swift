@@ -5,11 +5,12 @@ import Then
 
 final class LoginViewController: UIViewController {
         
+    var nickName: String?
     
     private let noticeLabel = UILabel().then{
         $0.text = "TVING ID 로그인"
         $0.font = .systemFont(ofSize: 23)
-        $0.textColor = .white
+        $0.textColor = UIColor.tvingGray1
         $0.textAlignment = .center
     }
     
@@ -21,22 +22,20 @@ final class LoginViewController: UIViewController {
     }
     private lazy var loginButton = UIButton().then{
         $0.setTitle("로그인하기", for: .normal)
-        $0.setTitleColor(.tvingGray4, for: .normal)
+        $0.setTitleColor(.tvingGray2, for: .normal)
         $0.backgroundColor = .black
         $0.layer.borderWidth = 2
-        $0.layer.borderColor = UIColor.tvingGray1.cgColor
+        $0.layer.borderColor = UIColor.tvingGray4.cgColor
         $0.addTarget(self, action: #selector(presentLoginButton),
                      for: .touchUpInside)
         $0.isEnabled = false
-
-        
     }
     
     
     private var findIdButton: UIButton = {
         let button = UIButton()
         button.setTitle("아이디 찾기", for: .normal)
-        button.setTitleColor(.tvingGray4, for: .normal)
+        button.setTitleColor(.tvingGray2, for: .normal)
         
         return button
     }()
@@ -44,7 +43,7 @@ final class LoginViewController: UIViewController {
     private var findPwButton: UIButton = {
         let button = UIButton()
         button.setTitle("비밀번호 찾기", for: .normal)
-        button.setTitleColor(.tvingGray4, for: .normal)
+        button.setTitleColor(.tvingGray2, for: .normal)
         return button
     }()
     
@@ -63,15 +62,17 @@ final class LoginViewController: UIViewController {
     private let askLabel = UILabel().then{
         $0.text = "아직 계정이 없으신가요?"
         $0.font = .systemFont(ofSize: 14)
-        $0.textColor = .tvingGray2 // 이거는 UI 다 해결하면 수정할 예정!
+        $0.textColor = .tvingGray3 // 이거는 UI 다 해결하면 수정할 예정!
         $0.textAlignment = .center
     }
     
     private lazy var nickNameButton = UIButton().then{
         $0.setTitle("닉네임 만들러가기", for: .normal)
-        $0.setTitleColor(.tvingGray3, for: .normal)
+        $0.setTitleColor(.tvingGray2, for: .normal)
         $0.setUnderlineTitle("닉네임 만들러가기", for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        $0.addTarget(self, action: #selector(showNickNameViewController), for: .touchUpInside)
+
         
     }
     
@@ -123,9 +124,14 @@ private extension LoginViewController {
            loginUser.checkPassword(password: passwordText.text ?? "") {
             loginButton.isEnabled = true
             loginButton.backgroundColor = .tvingRed
+            loginButton.setTitleColor(.white, for: .normal)
+            loginButton.layer.borderColor = UIColor.tvingRed.cgColor
+
         } else {
             loginButton.isEnabled = false
             loginButton.backgroundColor = .black
+            loginButton.layer.borderColor = UIColor.tvingGray4.cgColor
+
         }
     }
     
@@ -170,19 +176,41 @@ private extension LoginViewController {
     }
     
     func loginButtonTap() {
-        guard let email = idText.text else { return }
         let viewController = WelcomeViewController()
-        viewController.loginDataBind(email: email)
-        self.present(viewController, animated: true)
+
+        if ((nickName?.isEmpty) != nil) {
+            guard let name = self.nickName else { return }
+            viewController.loginDataBind(email: name)
+            print("\(name)!")
+        }
+        else{
+            guard let email = idText.text else { return }
+            viewController.loginDataBind(email: email)
+            print("\(email)!")
+            print(nickName)
+        }
+        self.present(viewController, animated: true)        
     }
+    
+    
     
     @objc
     func presentLoginButton() {
         loginButtonTap()
     }
     
-    
-    
-    
-
+    @objc private func showNickNameViewController() {
+        let nickNameViewController = NickNameViewController() // NickNameViewController 인스턴스 생성
+        nickNameViewController.delegate = self
+        self.present(nickNameViewController, animated: true, completion: nil) // 모달 형식으로 띄워주기
+    }
 }
+
+extension LoginViewController: DataBindNickName{
+    func dataBindNickName(text: String) {
+          self.nickName = text
+      }
+
+        
+}
+

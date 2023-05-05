@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2530278829FBD1AF0010FAF8 /* NickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530278729FBD1AF0010FAF8 /* NickNameViewController.swift */; };
 		257BB65729ED82E10052136D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB65629ED82E10052136D /* AppDelegate.swift */; };
 		257BB65929ED82E10052136D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB65829ED82E10052136D /* SceneDelegate.swift */; };
 		257BB65B29ED82E10052136D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB65A29ED82E10052136D /* LoginViewController.swift */; };
@@ -14,13 +15,14 @@
 		257BB66329ED82E10052136D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257BB66129ED82E10052136D /* LaunchScreen.storyboard */; };
 		257BB66C29EDA3D70052136D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 257BB66B29EDA3D70052136D /* SnapKit */; };
 		257BB66F29EDA3F30052136D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 257BB66E29EDA3F30052136D /* Then */; };
-		257BB67229EE58AE0052136D /* ExtensionS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB67129EE58AE0052136D /* ExtensionS.swift */; };
+		257BB67229EE58AE0052136D /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB67129EE58AE0052136D /* ExtensionUI.swift */; };
 		257BB67429EE5CA40052136D /* extensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB67329EE5CA40052136D /* extensionColor.swift */; };
 		257BB67629EE85E70052136D /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB67529EE85E70052136D /* LoginUser.swift */; };
 		257BB67829EECFD70052136D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BB67729EECFD70052136D /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2530278729FBD1AF0010FAF8 /* NickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameViewController.swift; sourceTree = "<group>"; };
 		257BB65329ED82E10052136D /* Second_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Second_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257BB65629ED82E10052136D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257BB65829ED82E10052136D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		257BB65F29ED82E10052136D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257BB66229ED82E10052136D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		257BB66429ED82E10052136D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		257BB67129EE58AE0052136D /* ExtensionS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionS.swift; sourceTree = "<group>"; };
+		257BB67129EE58AE0052136D /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		257BB67329EE5CA40052136D /* extensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionColor.swift; sourceTree = "<group>"; };
 		257BB67529EE85E70052136D /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
 		257BB67729EECFD70052136D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2530278429FBCFB20010FAF8 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				257BB65A29ED82E10052136D /* LoginViewController.swift */,
+				257BB67729EECFD70052136D /* WelcomeViewController.swift */,
+				2530278729FBD1AF0010FAF8 /* NickNameViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
 		257BB64A29ED82E10052136D = {
 			isa = PBXGroup;
 			children = (
@@ -68,24 +80,15 @@
 			children = (
 				257BB65629ED82E10052136D /* AppDelegate.swift */,
 				257BB65829ED82E10052136D /* SceneDelegate.swift */,
-				257BB67029EE58740052136D /* extension+ */,
-				257BB65A29ED82E10052136D /* LoginViewController.swift */,
-				257BB67729EECFD70052136D /* WelcomeViewController.swift */,
+				257BB67529EE85E70052136D /* LoginUser.swift */,
+				257BB67129EE58AE0052136D /* ExtensionUI.swift */,
+				257BB67329EE5CA40052136D /* extensionColor.swift */,
+				2530278429FBCFB20010FAF8 /* VCs */,
 				257BB65F29ED82E10052136D /* Assets.xcassets */,
 				257BB66129ED82E10052136D /* LaunchScreen.storyboard */,
 				257BB66429ED82E10052136D /* Info.plist */,
 			);
 			path = Second_Seminar;
-			sourceTree = "<group>";
-		};
-		257BB67029EE58740052136D /* extension+ */ = {
-			isa = PBXGroup;
-			children = (
-				257BB67129EE58AE0052136D /* ExtensionS.swift */,
-				257BB67329EE5CA40052136D /* extensionColor.swift */,
-				257BB67529EE85E70052136D /* LoginUser.swift */,
-			);
-			path = "extension+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +171,9 @@
 			files = (
 				257BB67629EE85E70052136D /* LoginUser.swift in Sources */,
 				257BB65B29ED82E10052136D /* LoginViewController.swift in Sources */,
-				257BB67229EE58AE0052136D /* ExtensionS.swift in Sources */,
+				257BB67229EE58AE0052136D /* ExtensionUI.swift in Sources */,
 				257BB65729ED82E10052136D /* AppDelegate.swift in Sources */,
+				2530278829FBD1AF0010FAF8 /* NickNameViewController.swift in Sources */,
 				257BB65929ED82E10052136D /* SceneDelegate.swift in Sources */,
 				257BB67429EE5CA40052136D /* extensionColor.swift in Sources */,
 				257BB67829EECFD70052136D /* WelcomeViewController.swift in Sources */,

@@ -73,7 +73,6 @@ private extension FirstViewController_Lab {
         viewController.delegate = self
         self.present(viewController, animated: true)
     }
-    
 }
 
 extension FirstViewController_Lab: TapButton{

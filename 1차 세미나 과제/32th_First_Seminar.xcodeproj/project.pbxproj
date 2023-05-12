@@ -10,6 +10,13 @@
 		2503086D29EAB35A000DE430 /* FirstViewController_Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503086C29EAB35A000DE430 /* FirstViewController_Lab.swift */; };
 		2503086F29EAB66B000DE430 /* SecondViewController_Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503086E29EAB66B000DE430 /* SecondViewController_Lab.swift */; };
 		250D32B42A04EF4D00BE6DAA /* diffifif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32B32A04EF4D00BE6DAA /* diffifif.swift */; };
+		250D32B82A06168900BE6DAA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 250D32B72A06168900BE6DAA /* Alamofire */; };
+		250D32BA2A061EA600BE6DAA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32B92A061EA600BE6DAA /* Config.swift */; };
+		250D32BC2A061EC600BE6DAA /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32BB2A061EC600BE6DAA /* NetworkResult.swift */; };
+		250D32BE2A0623E800BE6DAA /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32BD2A0623E800BE6DAA /* URLViewController.swift */; };
+		250D32C02A06240C00BE6DAA /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32BF2A06240C00BE6DAA /* SignUpService.swift */; };
+		250D32C22A06245700BE6DAA /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32C12A06245700BE6DAA /* SignUpResponse.swift */; };
+		250D32C42A062CAD00BE6DAA /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D32C32A062CAD00BE6DAA /* WeatherModel.swift */; };
 		2561B82029DEBF4C00DF1765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B81F29DEBF4C00DF1765 /* AppDelegate.swift */; };
 		2561B82229DEBF4C00DF1765 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B82129DEBF4C00DF1765 /* SceneDelegate.swift */; };
 		2561B82429DEBF4C00DF1765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561B82329DEBF4C00DF1765 /* ViewController.swift */; };
@@ -63,6 +70,12 @@
 		2503086C29EAB35A000DE430 /* FirstViewController_Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController_Lab.swift; sourceTree = "<group>"; };
 		2503086E29EAB66B000DE430 /* SecondViewController_Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController_Lab.swift; sourceTree = "<group>"; };
 		250D32B32A04EF4D00BE6DAA /* diffifif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diffifif.swift; sourceTree = "<group>"; };
+		250D32B92A061EA600BE6DAA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		250D32BB2A061EC600BE6DAA /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		250D32BD2A0623E800BE6DAA /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
+		250D32BF2A06240C00BE6DAA /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		250D32C12A06245700BE6DAA /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		250D32C32A062CAD00BE6DAA /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		2561B81C29DEBF4C00DF1765 /* 32th_First_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 32th_First_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2561B81F29DEBF4C00DF1765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2561B82129DEBF4C00DF1765 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25FA834A29E13EB80091675E /* SnapKit in Frameworks */,
+				250D32B82A06168900BE6DAA /* Alamofire in Frameworks */,
 				25FA834D29E13EF90091675E /* Then in Frameworks */,
 				25FA835029E143940091675E /* Inject in Frameworks */,
 			);
@@ -124,6 +138,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250D32B52A0615E500BE6DAA /* 4nd_Seminar */ = {
+			isa = PBXGroup;
+			children = (
+				250D32BB2A061EC600BE6DAA /* NetworkResult.swift */,
+				250D32BF2A06240C00BE6DAA /* SignUpService.swift */,
+				250D32B92A061EA600BE6DAA /* Config.swift */,
+				250D32C32A062CAD00BE6DAA /* WeatherModel.swift */,
+				250D32C12A06245700BE6DAA /* SignUpResponse.swift */,
+				250D32BD2A0623E800BE6DAA /* URLViewController.swift */,
+			);
+			path = 4nd_Seminar;
+			sourceTree = "<group>";
+		};
 		2561B81329DEBF4C00DF1765 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +180,7 @@
 				2561B85129DEBFF500DF1765 /* SecondViewController.swift */,
 				2561B84F29DEBFE100DF1765 /* SWViewController.swift */,
 				2561B85329DEC08200DF1765 /* MoveViewController.swift */,
+				250D32B52A0615E500BE6DAA /* 4nd_Seminar */,
 				2586D80A29F3B17E000488BA /* 3nd_Seminar */,
 				25FA833F29E133ED0091675E /* 2nd_Seminar */,
 				2561B82829DEBF4D00DF1765 /* Assets.xcassets */,
@@ -240,6 +268,7 @@
 				25FA834929E13EB80091675E /* SnapKit */,
 				25FA834C29E13EF90091675E /* Then */,
 				25FA834F29E143940091675E /* Inject */,
+				250D32B72A06168900BE6DAA /* Alamofire */,
 			);
 			productName = 32th_First_Seminar;
 			productReference = 2561B81C29DEBF4C00DF1765 /* 32th_First_Seminar.app */;
@@ -317,6 +346,7 @@
 				25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				25FA834B29E13EF90091675E /* XCRemoteSwiftPackageReference "Then" */,
 				25FA834E29E143940091675E /* XCRemoteSwiftPackageReference "Inject" */,
+				250D32B62A06168900BE6DAA /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 2561B81D29DEBF4C00DF1765 /* Products */;
 			projectDirPath = "";
@@ -363,7 +393,9 @@
 				2586D82629F3C317000488BA /* Photo.swift in Sources */,
 				2586D80629F3AC21000488BA /* BaseViewController.swift in Sources */,
 				25FA834329E134530091675E /* SecondViewController_DelegatePattern.swift in Sources */,
+				250D32BC2A061EC600BE6DAA /* NetworkResult.swift in Sources */,
 				2586D82429F3C0B7000488BA /* PhotoViewController.swift in Sources */,
+				250D32C02A06240C00BE6DAA /* SignUpService.swift in Sources */,
 				2586D81E29F3BA54000488BA /* UILabel+.swift in Sources */,
 				2561B82429DEBF4C00DF1765 /* ViewController.swift in Sources */,
 				25FA835329E146890091675E /* AutoLayoutViewController.swift in Sources */,
@@ -371,19 +403,23 @@
 				2503086D29EAB35A000DE430 /* FirstViewController_Lab.swift in Sources */,
 				2586D81429F3B5DD000488BA /* ReusableView.swift in Sources */,
 				250D32B42A04EF4D00BE6DAA /* diffifif.swift in Sources */,
+				250D32C42A062CAD00BE6DAA /* WeatherModel.swift in Sources */,
 				2561B82029DEBF4C00DF1765 /* AppDelegate.swift in Sources */,
 				2586D82029F3BB4D000488BA /* UIView+.swift in Sources */,
 				2586D81C29F3B949000488BA /* CarrotTableViewCell.swift in Sources */,
 				2561B85029DEBFE100DF1765 /* SWViewController.swift in Sources */,
 				2561B85229DEBFF500DF1765 /* SecondViewController.swift in Sources */,
+				250D32BE2A0623E800BE6DAA /* URLViewController.swift in Sources */,
 				2561B82229DEBF4C00DF1765 /* SceneDelegate.swift in Sources */,
 				25FA834129E134260091675E /* FirstViewController_DelegatePattern.swift in Sources */,
 				2586D80829F3AEE8000488BA /* BaseView.swift in Sources */,
+				250D32BA2A061EA600BE6DAA /* Config.swift in Sources */,
 				2561B85429DEC08200DF1765 /* MoveViewController.swift in Sources */,
 				2586D80229F3A7CD000488BA /* CommonView.swift in Sources */,
 				2586D81A29F3B7B0000488BA /* UIImage+.swift in Sources */,
 				2586D81629F3B692000488BA /* CarrotViewController.swift in Sources */,
 				2586D82229F3BFD7000488BA /* PhotoCell.swift in Sources */,
+				250D32C22A06245700BE6DAA /* SignUpResponse.swift in Sources */,
 				2586D81829F3B718000488BA /* Carrot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://54.180.123.11";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X96X8FG389;
@@ -579,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://54.180.123.11";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X96X8FG389;
@@ -720,6 +758,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		250D32B62A06168900BE6DAA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -747,6 +793,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		250D32B72A06168900BE6DAA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 250D32B62A06168900BE6DAA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		25FA834929E13EB80091675E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25FA834829E13EB80091675E /* XCRemoteSwiftPackageReference "SnapKit" */;
